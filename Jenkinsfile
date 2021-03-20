@@ -24,8 +24,7 @@ pipeline {
             
             steps {
              
-           ls -la
-                
+                 echo 'Hello Plan!'          
         }
                 
             }
