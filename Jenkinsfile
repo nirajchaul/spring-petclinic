@@ -18,7 +18,7 @@ pipeline {
         stage('init') {
             steps {
                  
-              sh 'mvn test'
+              sh 'mvn -eX test'
                 
                 
             }
