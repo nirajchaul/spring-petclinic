@@ -14,7 +14,8 @@ pipeline {
         stage('init') {
             steps {
                  
-               echo 'Hello World!'
+              mvn test
+                
                 
             }
         }
@@ -24,10 +25,22 @@ pipeline {
             
             steps {
              
-                 echo 'Hello Plan!'          
+                 mvn compile         
         }
                 
             }
+        
+        
+        stage('build') {
+            
+            steps {
+             
+                 mvn build         
+        }
+                
+            }
+        
+        
         }
         
         
