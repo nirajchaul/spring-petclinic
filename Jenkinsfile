@@ -18,7 +18,7 @@ pipeline {
         stage('init') {
             steps {
                  
-              mvn test
+              sh 'mvn test'
                 
                 
             }
@@ -29,7 +29,7 @@ pipeline {
             
             steps {
              
-                 mvn compile         
+                sh 'mvn compile'         
         }
                 
             }
@@ -39,7 +39,7 @@ pipeline {
             
             steps {
              
-                 mvn build         
+                 sh 'mvn build'        
         }
                 
             }
